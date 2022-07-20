@@ -1,4 +1,6 @@
-#!/usr/bin/env gxi
+;; -*- Gerbil -*-
+;;; © ober 2022
+;;; supergenpass client Library
 
 (import :std/format
         :ober/oberlib
@@ -10,6 +12,11 @@
         :std/sugar
         :std/iter
         )
+
+(export #t)
+(def version "0.01")
+(declare (not optimize-dead-definitions))
+
 
 (def replacements [
                    [ "=" "A" ]
